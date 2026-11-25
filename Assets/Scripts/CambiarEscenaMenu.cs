@@ -12,6 +12,13 @@ public class CambiarEscenaMenu : MonoBehaviour
 
     public void IrAJuego()
     {
+        MusicaPersistente musica = FindFirstObjectByType<MusicaPersistente>();
+
+        if (musica != null)
+        {
+            musica.ReproducirMusicaJuego();
+        }
+
         CambiarEscena("Juego");
     }
 
