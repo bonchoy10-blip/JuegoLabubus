@@ -32,6 +32,11 @@ public class CambiarEscenaMenu : MonoBehaviour
         CambiarEscena("pantalla_creditos");
     }
 
+    public void VolverAlMenu()
+    {
+        CambiarEscena("pantalla_inicio");
+    }
+
     void CambiarEscena(string nombreEscena)
     {
         if (!cambiandoEscena)
